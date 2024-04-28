@@ -1,6 +1,6 @@
 config.vm.define "ar-splunk-{{config.general.key_name}}-{{config.general.attack_range_name}}" do |config|
     VM_NAME= "ar-splunk"
-    config.vm.box = "generic/ubuntu2004"
+    config.vm.box = "bento/ubuntu-22.04"
     config.vm.hostname = "#{VM_NAME}"
     config.vm.boot_timeout = 600
     config.vm.network "forwarded_port", guest: 8000, host: 8000, protocol: "tcp"

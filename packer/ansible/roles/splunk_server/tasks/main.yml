@@ -1,14 +1,14 @@
 ---
 # This playbook contains common tasks in this role
 
-- include: splunk.yml
-- include: configure_inputs.yml
-- include: configure_indexes.yml
-- include: configure_limits.yml
-- include: configure_web_conf.yml
-- include: configure_server_conf.yml
-- include: create_serverclass.yml
-- include: install_app_from_s3.yml
+- include_tasks: splunk.yml
+- include_tasks: configure_inputs.yml
+- include_tasks: configure_indexes.yml
+- include_tasks: configure_limits.yml
+- include_tasks: configure_web_conf.yml
+- include_tasks: configure_server_conf.yml
+- include_tasks: create_serverclass.yml
+- include_tasks: install_app_from_s3.yml
   with_items:
     - "splunk-add-on-for-microsoft-windows_840.tgz"
     - "splunk-timeline-custom-visualization_161.tgz"
@@ -36,8 +36,8 @@
     - "vmware-carbon-black-cloud_115.tgz"
     - "splunk-add-on-for-carbon-black_210.tgz"
     - "TA-aurora-0.2.0.tar.gz"
-- include: configure_attack_range_dashboard.yml
-- include: configure_escu.yml
-- include: configure_props.yml
-- include: configure_cim.yml
-- include: configure_phantom.yml
+- include_tasks: configure_attack_range_dashboard.yml
+- include_tasks: configure_escu.yml
+- include_tasks: configure_props.yml
+- include_tasks: configure_cim.yml
+- include_tasks: configure_phantom.yml

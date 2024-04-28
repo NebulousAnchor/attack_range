@@ -38,7 +38,7 @@ Help is always welcome! For example, documentation can always use improvement. T
 ##### Feature Requests and Bug Reports
 Have ideas on improvements? See something that needs work? While the community encourages everyone to contribute code, it is also appreciated when someone reports an issue. Please report any issues or bugs you find through [GitHub's issue tracker](https://github.com/splunk/attack_range/issues). 
 
-If you are reporting a bug, please include:
+If you are reporting a bug, please include_tasks:
 
 * Your operating system name and version
 * Any details about your local setup that might be helpful in troubleshooting (ex. Python interpreter version, Splunk version, etc.)

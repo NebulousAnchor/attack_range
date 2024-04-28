@@ -1,9 +1,9 @@
 ---
-- include: install_osquery_linux.yml
-- include: install_deb_uf.yml
-- include: configure_outputs_conf.yml
-- include: create_deploymentclient.yml
-- include: collect_osquery_logs.yml
+- include_tasks: install_osquery_linux.yml
+- include_tasks: install_deb_uf.yml
+- include_tasks: configure_outputs_conf.yml
+- include_tasks: create_deploymentclient.yml
+- include_tasks: collect_osquery_logs.yml
 
 
 - name: Restart splunk uf

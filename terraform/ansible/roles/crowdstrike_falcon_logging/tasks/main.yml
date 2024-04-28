@@ -1,6 +1,6 @@
 ---
 
-- include: config.yml
+- include_tasks: config.yml
   when: crowdstrike_falcon == "1"
 
 - name: restart splunk

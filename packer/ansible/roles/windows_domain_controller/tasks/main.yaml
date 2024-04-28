@@ -1,2 +1,2 @@
-- include: create.yml
+- include_tasks: create.yml
   when: cloud_provider != "azure"

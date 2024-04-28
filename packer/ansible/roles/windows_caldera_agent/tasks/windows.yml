@@ -17,8 +17,8 @@
     dest: "{{ item.d }}"
   with_items: "{{ calderaagent_urls }}"
 
-- include: firewall.yml
-- include: registry.yml
+- include_tasks: firewall.yml
+- include_tasks: registry.yml
 
 - name: retrieve Caldera server config
   win_get_url:

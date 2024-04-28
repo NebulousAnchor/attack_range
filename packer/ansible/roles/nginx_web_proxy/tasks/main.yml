@@ -1,9 +1,9 @@
 ---
-#- include: install_deb_uf.yml
-#- include: configure_outputs_conf.yml
-- include: nginx_web_proxy.yml
-#- include: create_deploymentclient.yml
-- include: configure_inputs.yml
+#- include_tasks: install_deb_uf.yml
+#- include_tasks: configure_outputs_conf.yml
+- include_tasks: nginx_web_proxy.yml
+#- include_tasks: create_deploymentclient.yml
+- include_tasks: configure_inputs.yml
 
 - name: Restart splunk uf
   become: true

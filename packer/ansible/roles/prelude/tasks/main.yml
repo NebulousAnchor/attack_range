@@ -1,6 +1,6 @@
 ---
 
-- include: install.yml
+- include_tasks: install.yml
   when: prelude == "1"
   tags:
     - prelude
