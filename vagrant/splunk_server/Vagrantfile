@@ -3,6 +3,7 @@ config.vm.define "ar-splunk-{{config.general.key_name}}-{{config.general.attack_
     config.vm.box = "bento/ubuntu-22.04"
     config.vm.hostname = "#{VM_NAME}"
     config.vm.boot_timeout = 600
+    config.vm.synced_folder '.', '/vagrant', disabled: true
     config.vm.network "forwarded_port", guest: 8000, host: 8000, protocol: "tcp"
     config.vm.network "forwarded_port", guest: 8089, host: 8089, protocol: "tcp"
     config.vm.network "forwarded_port", guest: 8080, host: 8080, protocol: "tcp"
